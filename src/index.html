@@ -1,0 +1,229 @@
+---
+title: 'Moo Marketing | The best Digial Maketing Company | Denver, CO'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                     Hero                     -->
+<!-- ============================================ -->
+
+<section id="hero-1946">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Stand out in your field.</h2>
+            <div class="cs-flex">
+                <p class="cs-text">Stop grazing in mediocrity—join the Moo movement and watch your brand become the cream of the crop</p>
+                <a href="" class="cs-button-solid">Read More</a>
+            </div>
+        </div>
+        <picture class="cs-picture">
+            <source media="(min-width: 601px)" srcset="/assets/images/LandingCow.jpg">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-site.png">
+            <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-site.png" alt="construction site" width="1280" height="510">
+        </picture>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/tool.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Construction</h3>
+                    <p class="cs-item-text">Designing and Building The Most Beautiful Custom Homes.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/hard-hat.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Project Development</h3>
+                    <p class="cs-item-text">Designing and Building The Most Beautiful Custom Homes.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/double-bed.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Interior Design</h3>
+                    <p class="cs-item-text">Designing and Building The Most Beautiful Custom Homes.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/building.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Architecture</h3>
+                    <p class="cs-item-text">Designing and Building The Most Beautiful Custom Homes.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+ 
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1363">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/Cowpc.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/Cowpc.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/Cowpc.jpg" alt="people" width="605868" height="690">
+            </picture>
+            <div class="cs-box">
+                <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60" height="60">
+                <span class="cs-desc">
+                    We’ve Over 26 Years of Experience
+                </span>
+            </div>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Why choose us</span>
+            <h2 class="cs-title">Not just herding cattle; we’re herding creativity</h2>
+            <p class="cs-text">
+                Our team of marketing mavericks knows how to milk every opportunity, turning mere moos into marketing magic. We don’t just think outside the barn; we turn it into a dance floor and throw the biggest branding party you’ve ever seen. 
+            </p>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+                        Quality Services
+                    </h3>
+                    <p class="cs-item-text">
+                        There are many variations of but the majority is simply free suffered.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+                        Quality Services
+                    </h3>
+                    <p class="cs-item-text">
+                        There are many variations of but the majority is simply free suffered.
+                    </p>
+                </li>
+            </ul>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
+                    Digital Solutions Provider Agency
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
+                    Unicode, UTF8 & Character Sets The Ultimate Guide
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
+                    WordPress Guides For The Advanced Beginner
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
+                    Digital Clean Checklist Prepared New Year
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid">Discover More</a>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                 
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-889">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Process</span>
+            <h2 class="cs-title">How It Works</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Contact Us</h3>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo voluptate.
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Initial Evaluation</h3>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo voluptate.
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg" alt="icon" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ficon-orange.svg" alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Develop a Plan</h3>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nemo voluptate.
+                </p>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">View All Projects</a>
+    </div>
+</section>
+                                
+
+    {% include 'components/cta.html' %}
+{% endblock %}
